@@ -1,0 +1,55 @@
+// Variables
+// -----------------------------------------------------
+
+
+
+// Styles
+// -----------------------------------------------------
+
+// Set how widths are measured
+// https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+// Use the whole screen
+html,
+body {
+	height: 100%;
+	// font-size:;
+}
+
+// Default body styles
+body {
+	position: relative;
+	// background: ;
+	// color: ;
+	padding: 0;
+	margin: 0;
+	font-family: ;
+	line-height: 1;
+}
+
+// Give all anchors and interactive elements the right curosr
+a,
+[ui-sref],
+[ng-href] {
+	cursor: pointer;
+}
+
+img {
+	// Getting images and embeds to work properly for a responsive world
+	max-width: 100%;
+	height: auto;
+	-ms-interpolation-mode: bicubic;
+
+	// Get rid of gap under images
+	display: inline-block;
+	vertical-align: middle;
+}

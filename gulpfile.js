@@ -17,7 +17,7 @@ var handleError = function(err) {
 
 
 gulp.task('styles', function () {
-	return gulp.src('./assets/styles.scss')
+	return gulp.src('./source/styles.scss')
 		.pipe(sourcemaps.init())
 		.pipe(sass())
 		.pipe(plumber(handleError))
@@ -30,7 +30,7 @@ gulp.task('styles', function () {
 });
 
 gulp.task('watch', function(){
-	gulp.watch('./assets/**/*.scss', ['styles']);
+	gulp.watch('./source/**/*.scss', ['styles']);
 });
 
 gulp.task('default', ['styles'], function(){
